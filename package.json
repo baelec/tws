@@ -5,18 +5,26 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "semantic-ui-css": "^2.2.14",
+    "semantic-ui-react": "^0.78.2"
   },
   "devDependencies": {
     "@types/react": "^16.0.36",
     "@types/react-dom": "^16.0.3",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",
     "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.1",
     "ts-loader": "^3.5.0",
     "typescript": "^2.7.1",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "scripts": {
-    "build": "./scripts/build.sh"
+    "build": "./scripts/build.sh",
+    "start": "./node_modules/.bin/webpack-dev-server --hot --history-api-fallback --open"
   }
 }
